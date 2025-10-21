@@ -1,10 +1,10 @@
 export const projects = [
   {
-    title: "My iOS App",
+    title: "Essays on Growing a Garden",
     thumbnail: "/images/ios-app.png",
-    category: "iOS",
-    categoryType: "DEVELOPMENT",
-    description: "A cool iOS application I built"
+    category: "Writing",
+    categoryType: "OTHER",
+    description: "A collection of my essays on the attention economy and how it gets in the way of our lives."
   },
   {
     title: "Portfolio Website",
@@ -14,10 +14,17 @@ export const projects = [
     description: "My personal portfolio site"
   },
   {
-    title: "Blog Posts",
+    title: "Machine Man",
     thumbnail: "/images/blog.png",
-    category: "Writing",
+    category: "Music",
     categoryType: "OTHER", 
-    description: "Collection of my writing"
+    description: "My first album."
+  },
+    {
+    title: "IDE Arcade",
+    thumbnail: "/images/blog.png",
+    category: "Dev Tools",
+    categoryType: "DEVELOPMENT", 
+    description: "A VS Code Extension which lets you play retro games inside your IDE. Tbh, vibecoded slop."
   }
 ];

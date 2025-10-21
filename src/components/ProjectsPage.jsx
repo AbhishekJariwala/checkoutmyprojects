@@ -13,9 +13,7 @@ export default function ProjectsPage() {
     : projects; // Show all if no filter selected
 
   return (
-    <div>
-      <h1>Projects</h1>
-      
+    <div>      
       <Filter onFilterChange={setSelectedFilter} />
 
       <div className="projects-grid">
