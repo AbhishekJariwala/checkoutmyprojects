@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import Filter from '@/components/Filter';
+import ProjectsPage from '@/components/ProjectsPage';
 
 export default function Home() {
   return (
@@ -35,7 +35,7 @@ export default function Home() {
             Projects
           </h2>
           <div id="Filter">
-            <Filter />
+            <ProjectsPage />
           </div>
         </div>
       </main>
