@@ -2,28 +2,26 @@
 
 import { useState } from 'react';
 import Filter from './Filter';
+import ProjectCard from './ProjectCard';
 import { projects } from '@/data/projects';
 
 export default function ProjectsPage() {
   const [selectedFilter, setSelectedFilter] = useState(null);
 
-  // Filter projects based on selected category
   const filteredProjects = selectedFilter
     ? projects.filter(project => project.category === selectedFilter)
-    : projects; // Show all if no filter selected
+    : projects;
 
   return (
-    <div>      
+    <div>
+      <h1 className="text-3xl font-medium">Flagship Projects</h1>
+      <ProjectCard project={projects[0]} />
+      
       <Filter onFilterChange={setSelectedFilter} />
 
       <div className="projects-grid">
         {filteredProjects.map((project, index) => (
-          <div key={index} className="project-card">
-            <img src={project.thumbnail} alt={project.title} />
-            <h3>{project.title}</h3>
-            <span className="category">{project.category}</span>
-            <p>{project.description}</p>
-          </div>
+          <ProjectCard key={index} project={project} />
         ))}
       </div>
     </div>

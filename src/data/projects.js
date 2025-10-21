@@ -25,6 +25,6 @@ export const projects = [
     thumbnail: "/images/blog.png",
     category: "Dev Tools",
     categoryType: "DEVELOPMENT", 
-    description: "A VS Code Extension which lets you play retro games inside your IDE. Tbh, vibecoded slop."
+    description: "A VS Code Extension which lets you play retro games inside your IDE. Tbh, vibecoded slop but gets users on autopilot."
   }
 ];
